@@ -42,6 +42,8 @@ install -d $RPM_BUILD_ROOT{%{ruby_archdir},%{ruby_ridir}}
 ruby setup.rb install \
 	--prefix=$RPM_BUILD_ROOT
 
+cp -a lib/web/resources/* $RPM_BUILD_ROOT/%{ruby_rubylibdir}/web/resources/
+
 cp -a ri/ri/* $RPM_BUILD_ROOT%{ruby_ridir}
 rm $RPM_BUILD_ROOT%{ruby_ridir}/Array/cdesc-Array.yaml
 rm $RPM_BUILD_ROOT%{ruby_ridir}/Object/cdesc-Object.yaml
