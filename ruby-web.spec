@@ -1,6 +1,3 @@
-%define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
-%define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 Summary:	A web platform for pages and applications
 Summary(pl):	Platforma WWW dla stron i aplikacji
 Name:		ruby-web
@@ -11,6 +8,7 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/6307/%{name}_%{version}.beta.tar.gz
 # Source0-md5:	c8d2ab1498618bc8272b3171a895c4ae
 URL:		http://ruby-web.org
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 BuildRequires:	ruby-devel
 BuildRequires:	setup.rb = 3.3.1
@@ -35,10 +33,9 @@ dystrybucji zasobów takich jak obrazki.
 
 %prep
 %setup -q -n %{name}-%{version}.beta
-
-%build
 cp %{_datadir}/setup.rb .
 
+%build
 ruby setup.rb config \
 	--rbdir=%{ruby_rubylibdir} \
 	--sodir=%{ruby_archdir}
