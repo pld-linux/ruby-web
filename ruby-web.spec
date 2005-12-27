@@ -9,7 +9,6 @@ Source0:	http://rubyforge.org/frs/download.php/6307/%{name}_%{version}.beta.tar.
 # Source0-md5:	c8d2ab1498618bc8272b3171a895c4ae
 URL:		http://ruby-web.org
 BuildRequires:	rpmbuild(macros) >= 1.263
-BuildRequires:	ruby-modules
 BuildRequires:	ruby-devel
 BuildRequires:	setup.rb = 3.3.1
 Requires:	ruby-modules
