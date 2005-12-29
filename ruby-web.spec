@@ -8,10 +8,10 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/6307/%{name}_%{version}.beta.tar.gz
 # Source0-md5:	c8d2ab1498618bc8272b3171a895c4ae
 URL:		http://ruby-web.org
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
 BuildRequires:	setup.rb = 3.3.1
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
