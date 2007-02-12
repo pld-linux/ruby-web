@@ -1,5 +1,5 @@
 Summary:	A web platform for pages and applications
-Summary(pl):	Platforma WWW dla stron i aplikacji
+Summary(pl.UTF-8):   Platforma WWW dla stron i aplikacji
 Name:		ruby-web
 Version:	1.1.0
 Release:	2
@@ -23,12 +23,12 @@ methods to help with the growing pains. Finally, ruby-web contains
 methods to support distribution of resources like images in a ruby
 library.
 
-%description -l pl
-ruby-web zosta³ zaprojektowany do tworzenia stron skaluj±cych siê do
-aplikacji. Pozwala u¿ywaæ pliku "application.rb" do wyci±gania serwisu
-z katalogu stron. Ma rozszerzaln± obs³ugê metod testowania, aby pomóc
-programistom. Ponadto zawiera w bibliotece metody do obs³ugi
-dystrybucji zasobów takich jak obrazki.
+%description -l pl.UTF-8
+ruby-web zostaÅ‚ zaprojektowany do tworzenia stron skalujÄ…cych siÄ™ do
+aplikacji. Pozwala uÅ¼ywaÄ‡ pliku "application.rb" do wyciÄ…gania serwisu
+z katalogu stron. Ma rozszerzalnÄ… obsÅ‚ugÄ™ metod testowania, aby pomÃ³c
+programistom. Ponadto zawiera w bibliotece metody do obsÅ‚ugi
+dystrybucji zasobÃ³w takich jak obrazki.
 
 %prep
 %setup -q -n %{name}-%{version}.beta
