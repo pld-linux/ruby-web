@@ -1,5 +1,5 @@
 Summary:	A web platform for pages and applications
-Summary(pl.UTF-8):   Platforma WWW dla stron i aplikacji
+Summary(pl.UTF-8):	Platforma WWW dla stron i aplikacji
 Name:		ruby-web
 Version:	1.1.0
 Release:	2
