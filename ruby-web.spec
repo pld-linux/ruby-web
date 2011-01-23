@@ -10,7 +10,7 @@ Source0:	http://rubyforge.org/frs/download.php/6307/%{name}_%{version}.beta.tar.
 URL:		http://ruby-web.org
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
-BuildRequires:	setup.rb = 3.4.1
+BuildRequires:	setup.rb >= 3.4.1
 %{?ruby_mod_ver_requires_eq}
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
